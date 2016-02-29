@@ -1,0 +1,23 @@
+
+
+<div class="container-fluid" ng-controller="HomeCtrl">
+  <div class="row">
+    <div class="col-xs-12 text-center">
+		<input type="Text" name="empId" placeholder="Search with EMP ID" maxlength="6" ng-model="employeeId" ng-change="results.length > 0 && clearResults()"></input>
+	</div>
+  </div>
+  <div class="row animated marginTop10" ng-class="employeeId.length >= 6 ? 'fadeInDown show' : 'fadeOutUp dontShow'">
+    <div class="col-xs-12 text-center">
+		<button type="button" class="btn btn-primary" ng-click="findEmployee(employeeId, 'onlyDetails')">Employee Details</button>
+		<button type="button" class="btn btn-primary" ng-click="findEmployee(employeeId, 'onlySalary')">Employee Salary</button>
+		<button type="button" class="btn btn-primary" ng-click="findEmployee(employeeId, 'both')">Employee Details & Salary</button>
+	</div>
+  </div>  
+  <div class="row marginTop30" ng-class="results.length > 0 ? 'show' : 'dontShow'">
+    <div class="col-xs-12 text-center">  
+		<ul>
+		  <li ng-repeat="result in results">{{result.firstName}} {{result.lastName}} {{result.salary}} {{result.noresult}}</li>
+		</ul>
+	</div>
+  </div>
+</div>

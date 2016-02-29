@@ -1,0 +1,21 @@
+[
+    {
+        "empId": "123456", 
+        "firstName": "Madhu", 
+        "lastName": "Chenna", 
+        "salary": "$150,000" 
+    },
+    {
+        "empId": "123457", 
+        "firstName": "Chiranjeevi", 
+        "lastName": "Konidela", 
+        "salary": "$3,000,000" 
+    },
+    {
+        "empId": "123458", 
+        "firstName": "Sachin", 
+        "lastName": "Tendulkar", 
+        "salary": "$9,150,000" 
+    }
+	
+]

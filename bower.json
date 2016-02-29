@@ -1,0 +1,16 @@
+{
+  "name": "ctsprescreen",
+  "description": "Prescreen for CTS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mchenna9624/ctsprescreen",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-route": "~1.4.0",
+    "angular-loader": "~1.4.0",
+    "angular-mocks": "~1.4.0",
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.1.1"
+  }
+}
